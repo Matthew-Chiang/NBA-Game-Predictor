@@ -174,6 +174,7 @@ def trainingSet(startDateInt,endDateInt): #startDateInt is in the form  YYYYMMDD
     formatted = []
     for x in allDays:
         formatted.append(x.replace('-', ''))
+    #formatted is a list of days between the two dates specified
     gamesHappening = []
     for i in range(0,diff.days+1):
         gamesForTheDay = gamesHappeningon(formatted[i])
@@ -183,18 +184,15 @@ def trainingSet(startDateInt,endDateInt): #startDateInt is in the form  YYYYMMDD
     #print(gamesHappening)
 
     #parese individual games
-    fastList = []
+    #concatentates each game's stats (home and away)
     for idx, i in enumerate(gamesForTheDay):
-        #temprow = numpy.zeros(0)
-        temprow = []
+        #temprow = []
         #away
-        #temprow = numpy.concatenate([temprow,gameStats(gamesHappening[idx],'true')])
-        temprow =temprow + gameStats(gamesHappening[idx],'true')
-        #home
-        #temprow = numpy.concatenate([temprow,gameStats(gamesHappening[idx],'false')])
-        temprow =temprow + gameStats(gamesHappening[idx],'false')
-        #training = numpy.append(training,temprow, axis = 0)
-        print(temprow)
+        #print(len(gameStats(gamesHappening[idx],'true')))
+        temprow = gameStats(gamesHappening[idx],'away')
+        #length of gamestats ouput a 1x156 array
+        #print(type(gameStats(gamesHappening[idx],'true')))
+        temprow = numpy.append(temprow,gameStats(gamesHappening[idx],'home'),axis = 0)
 
     print(training)
 
