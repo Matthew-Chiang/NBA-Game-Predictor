@@ -136,15 +136,16 @@ def gameStats(gameidentifier, away):
             count[4]+=1
             SF = SF + 0.5*getPlayerStats(player)
             PF = PF + 0.5*getPlayerStats(player)
-
-    #print("hello")
-    #print(PG)
-    #print(count[0])
-    PG = PG/count[0]
-    SG = SG/count[1]
-    C = C/count[2]
-    SF = SF/count[3]
-    PF = PF/count[4]
+    if count[0] != 0:
+        PG = PG/count[0]
+    if count[1] != 0:
+        SG = SG/count[1]
+    if count[2] != 0:
+        C = C/count[2]
+    if count[3] != 0:
+        SF = SF/count[3]
+    if count[4] != 0:
+        PF = PF/count[4]
 
     gameSet = numpy.concatenate([gameSet,PG,SG,C,SF,PF])
 
@@ -152,7 +153,6 @@ def gameStats(gameidentifier, away):
 
 def trainingSet(startDateInt,endDateInt): #startDateInt is in the form  YYYYMMDD
     "combines the home and away team's stats into one row [away home]"
-    training = numpy.empty((0,312), int)
     #parse dates
     startday = startDateInt%100
     endday = endDateInt%100
@@ -181,18 +181,15 @@ def trainingSet(startDateInt,endDateInt): #startDateInt is in the form  YYYYMMDD
         for idx, j in enumerate(gamesForTheDay):
             gamesHappening.append(gamesForTheDay[idx])
 
-    #print(gamesHappening)
-
     #parese individual games
     #concatentates each game's stats (home and away)
-    for idx, i in enumerate(gamesForTheDay):
-        #temprow = []
-        #away
-        #print(len(gameStats(gamesHappening[idx],'true')))
-        temprow = gameStats(gamesHappening[idx],'away')
-        #length of gamestats ouput a 1x156 array
-        #print(type(gameStats(gamesHappening[idx],'true')))
-        temprow = numpy.append(temprow,gameStats(gamesHappening[idx],'home'),axis = 0)
+    training = numpy.empty((0,312))
+    #print(gamesHappening[0])
+    for idx, i in enumerate(gamesHappening):
+        temprow = []
+        #print(idx)
+        temprow = numpy.concatenate([temprow,gameStats(gamesHappening[idx],'away'),gameStats(gamesHappening[idx],'home')])
+        training = numpy.vstack((training,temprow))
 
     print(training)
 
