@@ -1,0 +1,55 @@
+{'cumulativeplayerstats': {'lastUpdatedOn': '2017-10-13 10:21:43 AM',
+
+'Position': 'PG'},
+
+'Fg2PtAttPerGame': {'@category': 'Field Goals', '@abbreviation': '2PA/G', '#text': '8.0'},
+
+'Fg2PtMadePerGame': {'@category': 'Field Goals', '@abbreviation': '2PM/G', '#text': '4.3'},
+
+'Fg3PtAttPerGame': {'@category': 'Field Goals', '@abbreviation': '3PA/G', '#text': '9.6'},
+
+'Fg3PtMadePerGame': {'@category': 'Field Goals', '@abbreviation': '3PM/G', '#text': '4.0'},
+
+'FtAttPerGame': {'@category': 'Free Throws', '@abbreviation': 'FTA/G', '#text': '4.4'},
+
+'FtMadePerGame': {'@category': 'Free Throws', '@abbreviation': 'FTM/G', '#text': '4.0'},
+
+'OffRebPerGame': {'@category': 'Rebounds', '@abbreviation': 'OREB/G', '#text': '0.7'},
+
+'DefRebPerGame': {'@category': 'Rebounds', '@abbreviation': 'DREB/G', '#text': '3.6'},
+
+'AstPerGame': {'@category': 'Offense', '@abbreviation': 'AST/G', '#text': '6.4'},
+
+'PtsPerGame': {'@category': 'Offense', '@abbreviation': 'PTS/G', '#text': '24.4'},
+
+'TovPerGame': {'@category': 'Defense', '@abbreviation': 'TOV/G', '#text': '2.9'},
+
+'StlPerGame': {'@category': 'Defense', '@abbreviation': 'STL/G', '#text': '1.8'},
+
+'BlkPerGame': {'@category': 'Defense', '@abbreviation': 'BS/G', '#text': '0.2'},
+
+'BlkAgainstPerGame': {'@category': 'Defense', '@abbreviation': 'BA/G', '#text': '0.7'},
+
+'FoulsPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'F/G', '#text': '5.6'},
+
+'FoulsDrawnPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'FD/G', '#text': '0.0'},
+
+'FoulPersPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'PF/G', '#text': '2.2'},
+
+'FoulPersDrawnPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'PFD/G', '#text': '3.4'},
+
+'FoulTechPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'TF/G', '#text': '0.0'},
+
+'FoulTechDrawnPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'TFD/G', '#text': '0.0'},
+
+'FoulFlag1PerGame': {'@category': 'Miscellaneous', '@abbreviation': 'FF1/G', '#text': '0.0'},
+
+'FoulFlag1DrawnPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'FF1D/G', '#text': '0.0'},
+
+'FoulFlag2PerGame': {'@category': 'Miscellaneous', '@abbreviation': 'FF2/G', '#text': '0.0'},
+
+'FoulFlag2DrawnPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'FF2D/G', '#text': '0.0'},
+
+'PlusMinusPerGame': {'@category': 'Miscellaneous', '@abbreviation': '+/-/G', '#text': '12.4'},
+
+'MinSecondsPerGame': {'@category': 'Miscellaneous', '@abbreviation': 'MIN/G', '#text': '1930.5'}}}]}}

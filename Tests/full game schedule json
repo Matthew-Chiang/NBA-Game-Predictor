@@ -1,0 +1,25 @@
+{'fullgameschedule':
+
+{'lastUpdatedOn': '2017-09-11 4:27:07 PM',
+
+'gameentry':
+
+[{'id': '33987',
+
+ 'scheduleStatus': 'Normal',
+
+ 'originalDate': None,
+
+ 'originalTime': None,
+
+ 'delayedOrPostponedReason': None,
+
+ 'date': '2016-11-01',
+
+ 'time': '6:00PM',
+
+ 'awayTeam': {'ID': '109', 'City': 'Houston', 'Name': 'Rockets', 'Abbreviation': 'HOU'},
+
+ 'homeTeam': {'ID': '86', 'City': 'Cleveland', 'Name': 'Cavaliers', 'Abbreviation': 'CLE'},
+
+ 'location': 'Quicken Loans Arena'}, 
